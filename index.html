@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-IN"> <!-- Set to Indian English -->
+<head>
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - 1</title>
+    <meta name="description" content="Get the latest news from across India in a clean, readable format">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css"> <!-- Main stylesheet -->
+    <!-- Font Awesome for icons (using CDN for faster loading) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Main Header Section -->
+    <header>
+        <div class="container"> <!-- Container for consistent width -->
+            <div class="header-content">
+                <h1>News Hub</h1> <!-- Main brand title -->
+                <p>Your window to India's stories</p> <!-- Tagline -->
+            </div>
+            
+            <!-- Dark Mode Toggle Button -->
+            <div class="theme-toggle">
+                <!-- Accessible button with moon icon (default light theme) -->
+                <button id="theme-switcher" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i> <!-- Will change to sun icon in dark mode -->
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container">
+        <!-- News Controls Section -->
+        <section class="controls">
+            <!-- Search Box -->
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search for news...">
+                <button id="search-btn" aria-label="Search news">
+                    <i class="fas fa-search"></i> <!-- Search icon -->
+                </button>
+            </div>
+            
+            <!-- Category Filter Buttons -->
+            <div class="category-filters">
+                <!-- Default active filter showing all India news -->
+                <button class="filter-btn active" data-category="india">All India</button>
+                <!-- Additional category buttons will be added dynamically via JavaScript -->
+            </div>
+        </section>
+
+        <!-- News Articles Grid -->
+        <section class="news-grid" id="news-container">
+            <!-- 
+              Dynamic content area where news cards will be inserted by JavaScript
+              Each card will contain:
+                - Article image
+                - Title
+                - Short description
+                - Source and timestamp
+                - Category badge
+            -->
+        </section>
+
+        <!-- Loading/Status Message Section -->
+        <div class="status-message" id="status-message">
+            <div class="loader"></div> <!-- Animated loading spinner -->
+            <p>Bringing you the latest updates from across India...</p>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <!-- Heart icon for emotional connection -->
+            <p>Made with <i class="fas fa-heart"></i> for India</p>
+            
+            <!-- API attribution with external link -->
+            <p>Data provided by <a href="https://newsdata.io/" target="_blank" rel="noopener noreferrer">NewsData.io</a></p>
+            
+            <!-- API usage disclaimer -->
+            <p class="small-note">Note: This is a demo using the free NewsData.io API plan</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="script.js"></script> <!-- Main application logic -->
+</body>
+</html>
