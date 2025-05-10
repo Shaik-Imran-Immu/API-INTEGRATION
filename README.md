@@ -55,3 +55,5 @@ Evaluation Criteria:
 * Code readability, structure, and commenting
 * Proper error handling
 
+
+![Image](https://github.com/user-attachments/assets/3703c230-7eac-47e1-9498-f24f32e33bf9)
